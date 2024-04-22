@@ -10,11 +10,15 @@ function App() {
         <Logo />
         <h1 className="text-2xl font-bold">DBZ Dream Team</h1>
       </nav>
-      <main className="p-10 grid grid-cols-3 bg-background gap-4">
+      <main className="p-10 grid grid-cols-3 bg-background gap-4 my-12">
         {characters.map((character) => {
           return (
-            <CharacterCard key={character.id} character={character} isInTeam={false}/>
-          )
+            <CharacterCard
+              key={character.id}
+              character={character}
+              isInTeam={false}
+            />
+          );
         })}
       </main>
       <aside className="fixed top-2 left-2">

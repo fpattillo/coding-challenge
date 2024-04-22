@@ -6,7 +6,6 @@ export function CharacterCard({ character, isInTeam }) {
   return (
     <Card className="p-2">
       <CardContent className="p-3 space-y-3">
-        <img src={character.image} className="w-full h-40 object-contain" />
         <h1 className="text-xl font-bold text-foreground flex gap-2 items-center">
           {character.name}
         </h1>
@@ -20,7 +19,9 @@ export function CharacterCard({ character, isInTeam }) {
           {character.description}
         </p>
         <Button className="w-full">Add to Team</Button>
-        <Button variant="destructive" className="w-full">Remove from Team</Button>
+        <Button variant="destructive" className="w-full">
+          Remove from Team
+        </Button>
       </CardContent>
     </Card>
   );

@@ -22,7 +22,7 @@ export function TeamCard({ members }) {
                     className="bg-background object-contain object-top"
                     src={member.image}
                   />
-                  <AvatarFallback>{member.name}</AvatarFallback>
+                  <AvatarFallback>{member.name[0]}</AvatarFallback>
                 </Avatar>
               ))}
             </div>
